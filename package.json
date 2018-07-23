@@ -1,0 +1,35 @@
+{
+  "name": "loopback-example-mixins",
+  "version": "1.0.0",
+  "description": "An example loopback project that uses a variation of mixins",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "slc run",
+    "test": "mocha -R spec test",
+    "posttest": "eslint ."
+  },
+  "dependencies": {
+    "@palmabit/loopback-ds-slugify-mixin": "^1.0.0",
+    "compression": "^1.0.3",
+    "cors": "^2.8.1",
+    "loopback": "^3.0.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-ds-timestamp-mixin": "^3.0.0",
+    "serve-favicon": "^2.0.1",
+    "strong-error-handler": "^1.1.0"
+  },
+  "optionalDependencies": {
+    "loopback-component-explorer": "^2.1.0"
+  },
+  "devDependencies": {
+    "eslint-config-loopback": "^4.0.0",
+    "eslint": "^2.13.1",
+    "mocha": "latest"
+  },
+  "license": "MIT",
+  "author": "Bryan Clark <clarkbw@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/strongloop/loopback-example-mixins"
+  }
+}

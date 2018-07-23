@@ -1,0 +1,44 @@
+{
+  "name": "Dog",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "strict": false,
+  "options": {
+    "validateUpsert": false
+  },
+  "properties": {
+    "breed": {
+      "type": "string",
+      "required": true
+    },
+    "weight": {
+      "type": "number"
+    },
+    "age": {
+      "type": "number"
+    }
+  },
+
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": [],
+  "mixins": {
+    "Timestamp": {
+      "myOption": 1,
+      "anotherOpt": 2
+    },
+    "Tag": true,
+    "Slug": true,
+    "Squirrel": true,
+    "Slugify": {
+      "slugifyOptions": { 
+        "replacement": "=",
+        "remove": null,
+        "lower": true
+      },
+      "slugifiedField": "slug",
+      "fieldToSlugify": "name"
+    }
+  }
+}
